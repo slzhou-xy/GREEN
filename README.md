@@ -5,12 +5,11 @@ Please download data from this [website](https://drive.google.com/drive/folders/
 
 ## Pretraining
 
-### Chengdu
 ```
+# Chengdu
 python main.py --dataset chengdu
-```
-### Porto
-```
+
+# Porto
 python main.py --dataset porto 
 ```
 
@@ -18,18 +17,27 @@ python main.py --dataset porto
 
 ### Travel Time Estimation
 ```
-python main_tte.py --dataset chengdu 
+# Chengdu
+python main_tte.py --dataset chengdu
+
+#Porto
 python main_tte.py --dataset porto 
 ```
 
 ### Trajectory Classification
 ```
-python main_tte.py --dataset chengdu 
+# Chengdu
+python main_tte.py --dataset chengdu
+
+# Porto
 python main_tte.py --dataset porto 
 ```
 
 ### Most Similar Trajectory Search
 ```
-python main_sim.py --dataset chengdu 
+# Chengdu
+python main_sim.py --dataset chengdu
+
+# Porto
 python main_sim.py --dataset porto 
 ```
