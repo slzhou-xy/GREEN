@@ -1,7 +1,7 @@
 # GREEN
 
 ## Download data
-Please download road network data and trajectory data (for privacy, we only publish the sampled data at the review, and if the paper is accepted, we will open source all the data and code), then move data to the folder `GREEN/data/`
+For privacy, we only publish the sampled data (`GREEN/data/`) at the review, and if the paper is accepted, we will open source all the data and code.
 
 
 The hyper-parameters are in `GREEN/config/config.py`
