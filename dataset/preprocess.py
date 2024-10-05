@@ -5,7 +5,6 @@ from datetime import datetime
 
 import shapely
 import pandas as pd
-# import modin.pandas as pd 无法输入logging
 import numpy as np
 from geopy.distance import geodesic
 from math import atan2, degrees
@@ -17,7 +16,6 @@ from dataset.Date2Vec import Date2vec
 
 
 def generate_spatial_features(src, cs):
-    # src = [length, 2]
     tgt = []
 
     for i in range(1, len(src)):
@@ -25,13 +23,12 @@ def generate_spatial_features(src, cs):
         coord2 = src[i]
         coord1[0], coord1[1] = coord1[1], coord1[0]
         coord2[0], coord2[1] = coord2[1], coord2[0]
-        # y在前，X在后
+
         distance = geodesic(coord1, coord2).kilometers
 
         coord1[0], coord1[1] = coord1[1], coord1[0]
         coord2[0], coord2[1] = coord2[1], coord2[0]
 
-        # 方位角
         bearing = atan2(coord2[1] - coord1[1], coord2[0] - coord1[0])
         bearing = (degrees(bearing) + 360) % 360 / 360
 
@@ -156,7 +153,6 @@ class Preprocess:
         np.save(f'data/{Config.dataset}/road_feature.npy', feature)
         return feature
 
-    # 用Conv
     def _construct_grid_image(self, trajs):
         gps_traj = list(trajs['gps_list'])
         traffic_image = np.zeros((self.gs.x_size, self.gs.y_size))
@@ -232,7 +228,6 @@ class Preprocess:
         return train_traj, eval_traj, test_traj
 
     def _to_pkl(self, data):
-
         user_id = []
         road_list = []
         road_type_list = []
@@ -263,7 +258,7 @@ class Preprocess:
             grid_feature_list.append(grid_feature)
             user_id.append(row_data['user_id'])
             grid_traj_list.append(list(grid_traj))
-            travel_time.append(time_list[-1] - time_list[0])  # ptime和time首尾时间相同
+            travel_time.append(time_list[-1] - time_list[0])
             road_list.append(road)
             gps_list.append(list(coordinate))
             ptemporal_list.append(eval(row_data['ptime']))
