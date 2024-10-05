@@ -82,12 +82,6 @@ class Exp:
                                  )
 
     def save_model_with_epoch(self, epoch):
-        """
-        保存某个epoch的模型
-
-        Args:
-            epoch(int): 轮数
-        """
         save_config = dict()
         save_config['model'] = self.model.cpu()
         save_config['optimizer'] = self.optimizer.state_dict()
