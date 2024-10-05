@@ -1,0 +1,93 @@
+[main_cls.py:55 <module>()] -> =================================
+[main_cls.py:56 <module>()] -> is_resume = False
+is_cls = True
+seed = 42
+device = cuda:3
+dataset = chengdu
+grid_special_tokens = {'padding_token': 0, 'cls_token': 1}
+road_special_tokens = {'padding_token': 0, 'cls_token': 1, 'mask_token': 2}
+mask_length = 2
+mask_ratio = 0.2
+grid_size = 100
+grid_num = 0
+road_num = 0
+road_type = 0
+batch_size = 128
+training_epochs = 30
+training_lr = 0.0001
+bad_patience = 5
+warm_up_epoch = 10
+warmup_lr_init = 1e-06
+lr_min = 1e-06
+weight_decay = 0.0001
+hidden_emb_dim = 256
+pe_dropout = 0.1
+out_emb_dim = 128
+grid_in_channel = 3
+grid_out_channel = 64
+grid_trm_head = 4
+grid_trm_dropout = 0.1
+grid_trm_layer = 2
+grid_ffn_dim = 1024
+g_fea_size = 0
+g_heads_per_layer = [4, 4, 4]
+g_dim_per_layer = [256, 256, 256]
+g_num_layers = 3
+g_dropout = 0.1
+road_trm_head = 4
+road_trm_dropout = 0.1
+road_trm_layer = 4
+road_ffn_dim = 1024
+inter_trm_head = 2
+inter_trm_dropout = 0.1
+inter_trm_layer = 2
+inter_ffn_dim = 512
+tuning_all = True
+prediction_length = 5
+min_lon = 103.92994
+max_lon = 104.20535
+min_lat = 30.56799
+max_lat = 30.78813
+cls_num = 2
+[main_cls.py:57 <module>()] -> =================================
+[binary_cls_trainer.py:176 train()] -> [Epoch 0/30] [Train loss: 0.7076935968] [F1: 0.7755035862] [Accuracy: 0.6803468979] [Precision: 0.7421344492]
+[binary_cls_trainer.py:180 train()] -> [Epoch 0/30] [Eval  loss: 0.5552244263] [F1: 0.8155258042] [Accuracy: 0.7248484692] [Precision: 0.7492540952]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 1/30] [Train loss: 0.5133723764] [F1: 0.8278744059] [Accuracy: 0.7504592181] [Precision: 0.7795276324]
+[binary_cls_trainer.py:180 train()] -> [Epoch 1/30] [Eval  loss: 0.4685232066] [F1: 0.8504100034] [Accuracy: 0.7793264246] [Precision: 0.7886259769]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 2/30] [Train loss: 0.4604685117] [F1: 0.8498328138] [Accuracy: 0.7849740673] [Precision: 0.8091117459]
+[binary_cls_trainer.py:180 train()] -> [Epoch 2/30] [Eval  loss: 0.4402317449] [F1: 0.8605747763] [Accuracy: 0.7985210422] [Precision: 0.8125277554]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 3/30] [Train loss: 0.4337965798] [F1: 0.8610663091] [Accuracy: 0.8022443973] [Precision: 0.8242727697]
+[binary_cls_trainer.py:180 train()] -> [Epoch 3/30] [Eval  loss: 0.4186947553] [F1: 0.8698114739] [Accuracy: 0.8137106870] [Precision: 0.8285262651]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 4/30] [Train loss: 0.4160689318] [F1: 0.8684410339] [Accuracy: 0.8134118939] [Precision: 0.8340732541]
+[binary_cls_trainer.py:180 train()] -> [Epoch 4/30] [Eval  loss: 0.4100888105] [F1: 0.8754524917] [Accuracy: 0.8180985198] [Precision: 0.8188891338]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 5/30] [Train loss: 0.4017059964] [F1: 0.8741184235] [Accuracy: 0.8219409476] [Precision: 0.8416016304]
+[binary_cls_trainer.py:180 train()] -> [Epoch 5/30] [Eval  loss: 0.3949480362] [F1: 0.8797108714] [Accuracy: 0.8276140944] [Precision: 0.8368054366]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 6/30] [Train loss: 0.3894036385] [F1: 0.8790072116] [Accuracy: 0.8292841359] [Precision: 0.8482771066]
+[binary_cls_trainer.py:180 train()] -> [Epoch 6/30] [Eval  loss: 0.3893836391] [F1: 0.8788822837] [Accuracy: 0.8305823342] [Precision: 0.8549427406]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 7/30] [Train loss: 0.3803708648] [F1: 0.8826623815] [Accuracy: 0.8346714350] [Precision: 0.8529080882]
+[binary_cls_trainer.py:180 train()] -> [Epoch 7/30] [Eval  loss: 0.3902140220] [F1: 0.8800410743] [Accuracy: 0.8311458696] [Precision: 0.8510311320]
+[binary_cls_trainer.py:176 train()] -> [Epoch 8/30] [Train loss: 0.3731647892] [F1: 0.8852811955] [Accuracy: 0.8386276655] [Precision: 0.8567572634]
+[binary_cls_trainer.py:180 train()] -> [Epoch 8/30] [Eval  loss: 0.3965957873] [F1: 0.8814520669] [Accuracy: 0.8297090695] [Precision: 0.8366866597]
+[binary_cls_trainer.py:176 train()] -> [Epoch 9/30] [Train loss: 0.3664383070] [F1: 0.8879438817] [Accuracy: 0.8424749169] [Precision: 0.8598535733]
+[binary_cls_trainer.py:180 train()] -> [Epoch 9/30] [Eval  loss: 0.3860008381] [F1: 0.8814276054] [Accuracy: 0.8333010699] [Precision: 0.8533451038]
+[binary_cls_trainer.py:102 save_model_with_epoch()] -> Saved model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:176 train()] -> [Epoch 10/30] [Train loss: 0.3499695067] [F1: 0.8938631482] [Accuracy: 0.8512004199] [Precision: 0.8677946915]
+[binary_cls_trainer.py:180 train()] -> [Epoch 10/30] [Eval  loss: 0.3916325963] [F1: 0.8793541177] [Accuracy: 0.8342130508] [Precision: 0.8701443529]
+[binary_cls_trainer.py:176 train()] -> [Epoch 11/30] [Train loss: 0.3366039445] [F1: 0.8986369817] [Accuracy: 0.8581621811] [Precision: 0.8739904003]
+[binary_cls_trainer.py:180 train()] -> [Epoch 11/30] [Eval  loss: 0.3860634767] [F1: 0.8844253070] [Accuracy: 0.8374264930] [Precision: 0.8558086682]
+[binary_cls_trainer.py:176 train()] -> [Epoch 12/30] [Train loss: 0.3240174849] [F1: 0.9029812601] [Accuracy: 0.8644585958] [Precision: 0.8795491491]
+[binary_cls_trainer.py:180 train()] -> [Epoch 12/30] [Eval  loss: 0.3888491002] [F1: 0.8846074902] [Accuracy: 0.8379642177] [Precision: 0.8573778475]
+[binary_cls_trainer.py:176 train()] -> [Epoch 13/30] [Train loss: 0.3108600605] [F1: 0.9075229452] [Accuracy: 0.8710504014] [Precision: 0.8855798178]
+[binary_cls_trainer.py:180 train()] -> [Epoch 13/30] [Eval  loss: 0.3958900862] [F1: 0.8846094396] [Accuracy: 0.8362176881] [Precision: 0.8488715682]
+[binary_cls_trainer.py:176 train()] -> [Epoch 14/30] [Train loss: 0.2978773133] [F1: 0.9116041388] [Accuracy: 0.8769209370] [Precision: 0.8908002947]
+[binary_cls_trainer.py:180 train()] -> [Epoch 14/30] [Eval  loss: 0.4019526367] [F1: 0.8829970932] [Accuracy: 0.8370608403] [Precision: 0.8625632174]
+[binary_cls_trainer.py:203 train()] -> Best model at [epoch 9]!
+[binary_cls_trainer.py:115 load_model_with_epoch()] -> Loaded model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/binary_cls/best_model.pth
+[binary_cls_trainer.py:269 test()] -> [Binary CLS Test] [F1: 0.8824474974] [Accuracy: 0.8348411131] [Precision: 0.8550703139]
