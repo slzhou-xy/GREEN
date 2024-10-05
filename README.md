@@ -1,10 +1,10 @@
 # GREEN
 
 ## Download data
-For privacy, we only publish the sampled data (`GREEN/data/`) at the review, and if the paper is accepted, we will open source all the data and code.
+For privacy, we only publish the sampled data (`./data/`) at the review, and if the paper is accepted, we will open source all the data and code.
 
 
-The hyper-parameters are in `GREEN/config/config.py`
+The hyper-parameters are in `./config/config.py`
 
 ## Pretraining
 
