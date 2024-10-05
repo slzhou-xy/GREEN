@@ -1,0 +1,137 @@
+[main_tte.py:51 <module>()] -> =================================
+[main_tte.py:52 <module>()] -> is_resume = False
+is_cls = True
+seed = 42
+device = cuda:3
+dataset = chengdu
+grid_special_tokens = {'padding_token': 0, 'cls_token': 1}
+road_special_tokens = {'padding_token': 0, 'cls_token': 1, 'mask_token': 2}
+mask_length = 2
+mask_ratio = 0.2
+grid_size = 100
+grid_num = 0
+road_num = 0
+road_type = 0
+batch_size = 128
+training_epochs = 30
+training_lr = 0.0001
+bad_patience = 5
+warm_up_epoch = 10
+warmup_lr_init = 1e-06
+lr_min = 1e-06
+weight_decay = 0.0001
+hidden_emb_dim = 256
+pe_dropout = 0.1
+out_emb_dim = 128
+grid_in_channel = 3
+grid_out_channel = 64
+grid_trm_head = 4
+grid_trm_dropout = 0.1
+grid_trm_layer = 2
+grid_ffn_dim = 1024
+g_fea_size = 0
+g_heads_per_layer = [4, 4, 4]
+g_dim_per_layer = [256, 256, 256]
+g_num_layers = 3
+g_dropout = 0.1
+road_trm_head = 4
+road_trm_dropout = 0.1
+road_trm_layer = 4
+road_ffn_dim = 1024
+inter_trm_head = 2
+inter_trm_dropout = 0.1
+inter_trm_layer = 2
+inter_ffn_dim = 512
+tuning_all = True
+prediction_length = 5
+min_lon = 103.92994
+max_lon = 104.20535
+min_lat = 30.56799
+max_lat = 30.78813
+cls_num = 2
+[main_tte.py:53 <module>()] -> =================================
+[tte_trainer.py:174 train()] -> [Epoch 0/30] [Train loss: 17.3028064040] [MAE: 2.5993435383] [RMSE: 4.1551305654] [MAPE: 0.3045590520] 
+[tte_trainer.py:178 train()] -> [Epoch 0/30] [Eval  loss: 7.1740401882] [MAE: 1.7193311453] [RMSE: 2.6775519311] [MAPE: 0.2088881880]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 0, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 1/30] [Train loss: 4.5127964360] [MAE: 1.5002585649] [RMSE: 2.1243566773] [MAPE: 0.1983447671] 
+[tte_trainer.py:178 train()] -> [Epoch 1/30] [Eval  loss: 3.4798098980] [MAE: 1.3180260658] [RMSE: 1.8656289847] [MAPE: 0.1743123978]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 1, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 2/30] [Train loss: 3.3732326403] [MAE: 1.3205258846] [RMSE: 1.8365489185] [MAPE: 0.1773470640] 
+[tte_trainer.py:178 train()] -> [Epoch 2/30] [Eval  loss: 2.9392775068] [MAE: 1.2399414778] [RMSE: 1.7141652775] [MAPE: 0.1710090637]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 2, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 3/30] [Train loss: 3.0259928042] [MAE: 1.2486132383] [RMSE: 1.7395632699] [MAPE: 0.1674522758] 
+[tte_trainer.py:178 train()] -> [Epoch 3/30] [Eval  loss: 2.8971208386] [MAE: 1.2113218307] [RMSE: 1.7013450210] [MAPE: 0.1637925059]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 3, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 4/30] [Train loss: 2.8187000693] [MAE: 1.2076144218] [RMSE: 1.6789576874] [MAPE: 0.1617659330] 
+[tte_trainer.py:178 train()] -> [Epoch 4/30] [Eval  loss: 2.6807728868] [MAE: 1.2116855383] [RMSE: 1.6369121865] [MAPE: 0.1685007066]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 4, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 5/30] [Train loss: 2.6663280071] [MAE: 1.1758130789] [RMSE: 1.6328783524] [MAPE: 0.1574640125] 
+[tte_trainer.py:178 train()] -> [Epoch 5/30] [Eval  loss: 2.4698555050] [MAE: 1.1360945702] [RMSE: 1.5716807919] [MAPE: 0.1543796957]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 5, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 6/30] [Train loss: 2.5654342435] [MAE: 1.1548360586] [RMSE: 1.6016546455] [MAPE: 0.1545379013] 
+[tte_trainer.py:178 train()] -> [Epoch 6/30] [Eval  loss: 2.4044463447] [MAE: 1.1102267504] [RMSE: 1.5503857779] [MAPE: 0.1470752805]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 6, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 7/30] [Train loss: 2.4722593075] [MAE: 1.1343632936] [RMSE: 1.5723312080] [MAPE: 0.1516910642] 
+[tte_trainer.py:178 train()] -> [Epoch 7/30] [Eval  loss: 2.3785147270] [MAE: 1.0909993649] [RMSE: 1.5413286595] [MAPE: 0.1395796984]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 7, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 8/30] [Train loss: 2.4260684976] [MAE: 1.1245073080] [RMSE: 1.5576397646] [MAPE: 0.1502319276] 
+[tte_trainer.py:178 train()] -> [Epoch 8/30] [Eval  loss: 2.6715583255] [MAE: 1.1614736319] [RMSE: 1.6344913449] [MAPE: 0.1507497430]
+[tte_trainer.py:174 train()] -> [Epoch 9/30] [Train loss: 2.3770890800] [MAE: 1.1144911051] [RMSE: 1.5418105789] [MAPE: 0.1488997042] 
+[tte_trainer.py:178 train()] -> [Epoch 9/30] [Eval  loss: 2.7131522971] [MAE: 1.1546728611] [RMSE: 1.6464837234] [MAPE: 0.1438548863]
+[tte_trainer.py:174 train()] -> [Epoch 10/30] [Train loss: 2.2146037309] [MAE: 1.0796267986] [RMSE: 1.4881700689] [MAPE: 0.1441750377] 
+[tte_trainer.py:178 train()] -> [Epoch 10/30] [Eval  loss: 2.2624547771] [MAE: 1.0739401579] [RMSE: 1.5038713724] [MAPE: 0.1364171058]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 10, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 11/30] [Train loss: 2.1078892437] [MAE: 1.0562907457] [RMSE: 1.4518757034] [MAPE: 0.1411603838] 
+[tte_trainer.py:178 train()] -> [Epoch 11/30] [Eval  loss: 2.2855969106] [MAE: 1.0947551727] [RMSE: 1.5115849241] [MAPE: 0.1466123015]
+[tte_trainer.py:174 train()] -> [Epoch 12/30] [Train loss: 2.0393786003] [MAE: 1.0406842232] [RMSE: 1.4280214869] [MAPE: 0.1390692592] 
+[tte_trainer.py:178 train()] -> [Epoch 12/30] [Eval  loss: 2.2326664292] [MAE: 1.0677806139] [RMSE: 1.4937193033] [MAPE: 0.1400667131]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 12, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 13/30] [Train loss: 1.9588025212] [MAE: 1.0233491659] [RMSE: 1.3995213491] [MAPE: 0.1368853301] 
+[tte_trainer.py:178 train()] -> [Epoch 13/30] [Eval  loss: 2.1584710837] [MAE: 1.0394279957] [RMSE: 1.4684254714] [MAPE: 0.1336473227]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 13, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 14/30] [Train loss: 1.8924153072] [MAE: 1.0086559057] [RMSE: 1.3756512487] [MAPE: 0.1349646002] 
+[tte_trainer.py:178 train()] -> [Epoch 14/30] [Eval  loss: 2.1625774307] [MAE: 1.0513179302] [RMSE: 1.4704211853] [MAPE: 0.1363773793]
+[tte_trainer.py:174 train()] -> [Epoch 15/30] [Train loss: 1.8278058900] [MAE: 0.9942842126] [RMSE: 1.3519903840] [MAPE: 0.1332816184] 
+[tte_trainer.py:178 train()] -> [Epoch 15/30] [Eval  loss: 2.1144605377] [MAE: 1.0484172106] [RMSE: 1.4538601892] [MAPE: 0.1364444792]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 15, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 16/30] [Train loss: 1.7694362217] [MAE: 0.9812142849] [RMSE: 1.3301775611] [MAPE: 0.1317433566] 
+[tte_trainer.py:178 train()] -> [Epoch 16/30] [Eval  loss: 2.0410998635] [MAE: 1.0187911987] [RMSE: 1.4283042011] [MAPE: 0.1309580356]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 16, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 17/30] [Train loss: 1.7102193746] [MAE: 0.9667840004] [RMSE: 1.3077766714] [MAPE: 0.1299542338] 
+[tte_trainer.py:178 train()] -> [Epoch 17/30] [Eval  loss: 2.0216168663] [MAE: 1.0121924877] [RMSE: 1.4215892463] [MAPE: 0.1299080402]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 17, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 18/30] [Train loss: 1.6610230775] [MAE: 0.9551820755] [RMSE: 1.2888035370] [MAPE: 0.1286384612] 
+[tte_trainer.py:178 train()] -> [Epoch 18/30] [Eval  loss: 1.9625666701] [MAE: 1.0081061125] [RMSE: 1.4006172965] [MAPE: 0.1346585453]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 18, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 19/30] [Train loss: 1.6110682525] [MAE: 0.9434589744] [RMSE: 1.2692148607] [MAPE: 0.1272510290] 
+[tte_trainer.py:178 train()] -> [Epoch 19/30] [Eval  loss: 1.9788462716] [MAE: 1.0028612614] [RMSE: 1.4063151450] [MAPE: 0.1299091876]
+[tte_trainer.py:174 train()] -> [Epoch 20/30] [Train loss: 1.5612514728] [MAE: 0.9321865439] [RMSE: 1.2495079503] [MAPE: 0.1259793490] 
+[tte_trainer.py:178 train()] -> [Epoch 20/30] [Eval  loss: 1.9624483163] [MAE: 0.9979682565] [RMSE: 1.4004683426] [MAPE: 0.1292632967]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 20, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 21/30] [Train loss: 1.5234431858] [MAE: 0.9220214486] [RMSE: 1.2342410437] [MAPE: 0.1247997731] 
+[tte_trainer.py:178 train()] -> [Epoch 21/30] [Eval  loss: 1.9461257095] [MAE: 0.9963144064] [RMSE: 1.3948475882] [MAPE: 0.1293097883]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 21, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 22/30] [Train loss: 1.4874301524] [MAE: 0.9130034447] [RMSE: 1.2195666096] [MAPE: 0.1237810552] 
+[tte_trainer.py:178 train()] -> [Epoch 22/30] [Eval  loss: 1.9416475150] [MAE: 0.9935099483] [RMSE: 1.3928477493] [MAPE: 0.1286985427]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 22, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 23/30] [Train loss: 1.4555392982] [MAE: 0.9051956534] [RMSE: 1.2065000384] [MAPE: 0.1228958741] 
+[tte_trainer.py:178 train()] -> [Epoch 23/30] [Eval  loss: 1.9463342291] [MAE: 0.9998212457] [RMSE: 1.3948316064] [MAPE: 0.1303647906]
+[tte_trainer.py:174 train()] -> [Epoch 24/30] [Train loss: 1.4274248654] [MAE: 0.8979315758] [RMSE: 1.1947800691] [MAPE: 0.1221569404] 
+[tte_trainer.py:178 train()] -> [Epoch 24/30] [Eval  loss: 1.9468669766] [MAE: 0.9918460250] [RMSE: 1.3951107071] [MAPE: 0.1274013221]
+[tte_trainer.py:174 train()] -> [Epoch 25/30] [Train loss: 1.4083400990] [MAE: 0.8926038742] [RMSE: 1.1867226516] [MAPE: 0.1214815676] 
+[tte_trainer.py:178 train()] -> [Epoch 25/30] [Eval  loss: 1.9356918864] [MAE: 0.9916409850] [RMSE: 1.3909082017] [MAPE: 0.1283709109]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 25, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 26/30] [Train loss: 1.3902343286] [MAE: 0.8882473111] [RMSE: 1.1791138928] [MAPE: 0.1210453287] 
+[tte_trainer.py:178 train()] -> [Epoch 26/30] [Eval  loss: 1.9351835658] [MAE: 0.9931160212] [RMSE: 1.3907906937] [MAPE: 0.1292181760]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 26, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 27/30] [Train loss: 1.3763691619] [MAE: 0.8839691877] [RMSE: 1.1731935839] [MAPE: 0.1205441356] 
+[tte_trainer.py:178 train()] -> [Epoch 27/30] [Eval  loss: 1.9415687151] [MAE: 0.9944891334] [RMSE: 1.3929464273] [MAPE: 0.1284773499]
+[tte_trainer.py:174 train()] -> [Epoch 28/30] [Train loss: 1.3712471244] [MAE: 0.8826215267] [RMSE: 1.1709803409] [MAPE: 0.1203626916] 
+[tte_trainer.py:178 train()] -> [Epoch 28/30] [Eval  loss: 1.9261387901] [MAE: 0.9905299544] [RMSE: 1.3874816945] [MAPE: 0.1284564734]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 28, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:174 train()] -> [Epoch 29/30] [Train loss: 1.3604371364] [MAE: 0.8797375560] [RMSE: 1.1663410493] [MAPE: 0.1200808808] 
+[tte_trainer.py:178 train()] -> [Epoch 29/30] [Eval  loss: 1.9239839709] [MAE: 0.9898862839] [RMSE: 1.3866840627] [MAPE: 0.1284631044]
+[tte_trainer.py:102 save_model_with_epoch()] -> Best epoch is 29, save model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:196 train()] -> Best model at [epoch 29]!
+[tte_trainer.py:116 load_model_with_epoch()] -> Loaded model at ./log/chengdu/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/tte/tte_best.pth
+[tte_trainer.py:261 test()] -> [Travel Time Estimation Test] [MAE: 0.9892919064] [RMSE: 1.3854598227] [MAPE: 0.1284055710]
