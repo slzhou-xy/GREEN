@@ -1,0 +1,202 @@
+[main.py:44 <module>()] -> =================================
+[main.py:45 <module>()] -> is_resume = False
+is_cls = True
+seed = 42
+device = cuda:2
+dataset = porto
+grid_special_tokens = {'padding_token': 0, 'cls_token': 1}
+road_special_tokens = {'padding_token': 0, 'cls_token': 1, 'mask_token': 2}
+mask_length = 2
+mask_ratio = 0.2
+grid_size = 100
+grid_num = 0
+road_num = 0
+road_type = 0
+batch_size = 128
+training_epochs = 30
+training_lr = 0.0002
+bad_patience = 5
+warm_up_epoch = 10
+warmup_lr_init = 1e-06
+lr_min = 1e-06
+weight_decay = 0.0001
+hidden_emb_dim = 256
+pe_dropout = 0.1
+out_emb_dim = 128
+grid_in_channel = 3
+grid_out_channel = 64
+grid_trm_head = 4
+grid_trm_dropout = 0.1
+grid_trm_layer = 2
+grid_ffn_dim = 1024
+g_fea_size = 0
+g_heads_per_layer = [4, 4, 4]
+g_dim_per_layer = [256, 256, 256]
+g_num_layers = 3
+g_dropout = 0.1
+road_trm_head = 4
+road_trm_dropout = 0.1
+road_trm_layer = 4
+road_ffn_dim = 1024
+inter_trm_head = 2
+inter_trm_dropout = 0.1
+inter_trm_layer = 2
+inter_ffn_dim = 512
+tuning_all = True
+prediction_length = 5
+min_lon = -8.68942
+min_lat = 41.13934
+max_lon = -8.55434
+max_lat = 41.18586
+cls_num = 3
+[main.py:46 <module>()] -> =================================
+[green_trainer.py:241 train()] -> [Epoch 0/30] [Train loss: 13.9834019028] [Eval loss: 13.5985333392]
+[green_trainer.py:244 train()] -> [Epoch 0/30] [Train cl  loss: 4.8664372222] [Eval cl  loss: 4.7275677399]
+[green_trainer.py:247 train()] -> [Epoch 0/30] [Train mlm loss: 9.1169646757] [Eval mlm loss: 8.8709655950]
+[green_trainer.py:250 train()] -> [Epoch 0/30] [Train mlm pred: 0.0015096144] [Eval mlm pred: 0.0028461983]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [0 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_0.pth
+[green_trainer.py:241 train()] -> [Epoch 1/30] [Train loss: 9.0438783831] [Eval loss: 7.7112110157]
+[green_trainer.py:244 train()] -> [Epoch 1/30] [Train cl  loss: 1.2711087826] [Eval cl  loss: 0.4042415662]
+[green_trainer.py:247 train()] -> [Epoch 1/30] [Train mlm loss: 7.7727696043] [Eval mlm loss: 7.3069694451]
+[green_trainer.py:250 train()] -> [Epoch 1/30] [Train mlm pred: 0.0054881109] [Eval mlm pred: 0.0105997535]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [1 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_1.pth
+[green_trainer.py:241 train()] -> [Epoch 2/30] [Train loss: 6.5228084667] [Eval loss: 5.1766725299]
+[green_trainer.py:244 train()] -> [Epoch 2/30] [Train cl  loss: 0.3433179037] [Eval cl  loss: 0.1957899963]
+[green_trainer.py:247 train()] -> [Epoch 2/30] [Train mlm loss: 6.1794905628] [Eval mlm loss: 4.9808825367]
+[green_trainer.py:250 train()] -> [Epoch 2/30] [Train mlm pred: 0.0300916600] [Eval mlm pred: 0.0629053783]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [2 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_2.pth
+[green_trainer.py:241 train()] -> [Epoch 3/30] [Train loss: 4.3120236513] [Eval loss: 3.4039693342]
+[green_trainer.py:244 train()] -> [Epoch 3/30] [Train cl  loss: 0.2001051437] [Eval cl  loss: 0.1150044817]
+[green_trainer.py:247 train()] -> [Epoch 3/30] [Train mlm loss: 4.1119185065] [Eval mlm loss: 3.2889648543]
+[green_trainer.py:250 train()] -> [Epoch 3/30] [Train mlm pred: 0.1006152943] [Eval mlm pred: 0.1526493649]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [3 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_3.pth
+[green_trainer.py:241 train()] -> [Epoch 4/30] [Train loss: 3.0849001977] [Eval loss: 2.4654694484]
+[green_trainer.py:244 train()] -> [Epoch 4/30] [Train cl  loss: 0.1354354151] [Eval cl  loss: 0.0434107898]
+[green_trainer.py:247 train()] -> [Epoch 4/30] [Train mlm loss: 2.9494647827] [Eval mlm loss: 2.4220586563]
+[green_trainer.py:250 train()] -> [Epoch 4/30] [Train mlm pred: 0.1775062231] [Eval mlm pred: 0.2529185884]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [4 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_4.pth
+[green_trainer.py:241 train()] -> [Epoch 5/30] [Train loss: 2.3062269091] [Eval loss: 1.6982057265]
+[green_trainer.py:244 train()] -> [Epoch 5/30] [Train cl  loss: 0.0782510815] [Eval cl  loss: 0.0357511612]
+[green_trainer.py:247 train()] -> [Epoch 5/30] [Train mlm loss: 2.2279758264] [Eval mlm loss: 1.6624545668]
+[green_trainer.py:250 train()] -> [Epoch 5/30] [Train mlm pred: 0.2909018541] [Eval mlm pred: 0.4650441333]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [5 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_5.pth
+[green_trainer.py:241 train()] -> [Epoch 6/30] [Train loss: 1.5398057440] [Eval loss: 0.9064524629]
+[green_trainer.py:244 train()] -> [Epoch 6/30] [Train cl  loss: 0.0633970328] [Eval cl  loss: 0.0345421285]
+[green_trainer.py:247 train()] -> [Epoch 6/30] [Train mlm loss: 1.4764087105] [Eval mlm loss: 0.8719103336]
+[green_trainer.py:250 train()] -> [Epoch 6/30] [Train mlm pred: 0.5142993279] [Eval mlm pred: 0.7492137614]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [6 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_6.pth
+[green_trainer.py:241 train()] -> [Epoch 7/30] [Train loss: 0.8065969538] [Eval loss: 0.3728289395]
+[green_trainer.py:244 train()] -> [Epoch 7/30] [Train cl  loss: 0.0474505711] [Eval cl  loss: 0.0169919581]
+[green_trainer.py:247 train()] -> [Epoch 7/30] [Train mlm loss: 0.7591463825] [Eval mlm loss: 0.3558369815]
+[green_trainer.py:250 train()] -> [Epoch 7/30] [Train mlm pred: 0.7638946302] [Eval mlm pred: 0.9070430420]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [7 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_7.pth
+[green_trainer.py:241 train()] -> [Epoch 8/30] [Train loss: 0.4101841883] [Eval loss: 0.1779901614]
+[green_trainer.py:244 train()] -> [Epoch 8/30] [Train cl  loss: 0.0326218626] [Eval cl  loss: 0.0142812238]
+[green_trainer.py:247 train()] -> [Epoch 8/30] [Train mlm loss: 0.3775623258] [Eval mlm loss: 0.1637089378]
+[green_trainer.py:250 train()] -> [Epoch 8/30] [Train mlm pred: 0.8894291258] [Eval mlm pred: 0.9596928452]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [8 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_8.pth
+[green_trainer.py:241 train()] -> [Epoch 9/30] [Train loss: 0.2353962502] [Eval loss: 0.1019154305]
+[green_trainer.py:244 train()] -> [Epoch 9/30] [Train cl  loss: 0.0250367071] [Eval cl  loss: 0.0080591052]
+[green_trainer.py:247 train()] -> [Epoch 9/30] [Train mlm loss: 0.2103595433] [Eval mlm loss: 0.0938563254]
+[green_trainer.py:250 train()] -> [Epoch 9/30] [Train mlm pred: 0.9408007119] [Eval mlm pred: 0.9768828097]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [9 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_9.pth
+[green_trainer.py:241 train()] -> [Epoch 10/30] [Train loss: 0.1454425555] [Eval loss: 0.0723360296]
+[green_trainer.py:244 train()] -> [Epoch 10/30] [Train cl  loss: 0.0163092972] [Eval cl  loss: 0.0077909309]
+[green_trainer.py:247 train()] -> [Epoch 10/30] [Train mlm loss: 0.1291332584] [Eval mlm loss: 0.0645450988]
+[green_trainer.py:250 train()] -> [Epoch 10/30] [Train mlm pred: 0.9646174363] [Eval mlm pred: 0.9842127800]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [10 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_10.pth
+[green_trainer.py:241 train()] -> [Epoch 11/30] [Train loss: 0.1090867545] [Eval loss: 0.0560880341]
+[green_trainer.py:244 train()] -> [Epoch 11/30] [Train cl  loss: 0.0133528640] [Eval cl  loss: 0.0072465262]
+[green_trainer.py:247 train()] -> [Epoch 11/30] [Train mlm loss: 0.0957338905] [Eval mlm loss: 0.0488415079]
+[green_trainer.py:250 train()] -> [Epoch 11/30] [Train mlm pred: 0.9737847494] [Eval mlm pred: 0.9879302444]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [11 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_11.pth
+[green_trainer.py:241 train()] -> [Epoch 12/30] [Train loss: 0.0875986941] [Eval loss: 0.0473679248]
+[green_trainer.py:244 train()] -> [Epoch 12/30] [Train cl  loss: 0.0107110822] [Eval cl  loss: 0.0051760019]
+[green_trainer.py:247 train()] -> [Epoch 12/30] [Train mlm loss: 0.0768876119] [Eval mlm loss: 0.0421919229]
+[green_trainer.py:250 train()] -> [Epoch 12/30] [Train mlm pred: 0.9790867115] [Eval mlm pred: 0.9894502866]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [12 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_12.pth
+[green_trainer.py:241 train()] -> [Epoch 13/30] [Train loss: 0.0728688021] [Eval loss: 0.0389151181]
+[green_trainer.py:244 train()] -> [Epoch 13/30] [Train cl  loss: 0.0089390958] [Eval cl  loss: 0.0041980345]
+[green_trainer.py:247 train()] -> [Epoch 13/30] [Train mlm loss: 0.0639297063] [Eval mlm loss: 0.0347170835]
+[green_trainer.py:250 train()] -> [Epoch 13/30] [Train mlm pred: 0.9826901829] [Eval mlm pred: 0.9914093443]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [13 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_13.pth
+[green_trainer.py:241 train()] -> [Epoch 14/30] [Train loss: 0.0616525896] [Eval loss: 0.0338707585]
+[green_trainer.py:244 train()] -> [Epoch 14/30] [Train cl  loss: 0.0075670573] [Eval cl  loss: 0.0034010510]
+[green_trainer.py:247 train()] -> [Epoch 14/30] [Train mlm loss: 0.0540855323] [Eval mlm loss: 0.0304697075]
+[green_trainer.py:250 train()] -> [Epoch 14/30] [Train mlm pred: 0.9853020986] [Eval mlm pred: 0.9924778676]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [14 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_14.pth
+[green_trainer.py:241 train()] -> [Epoch 15/30] [Train loss: 0.0536585736] [Eval loss: 0.0300514686]
+[green_trainer.py:244 train()] -> [Epoch 15/30] [Train cl  loss: 0.0065057728] [Eval cl  loss: 0.0025650103]
+[green_trainer.py:247 train()] -> [Epoch 15/30] [Train mlm loss: 0.0471528008] [Eval mlm loss: 0.0274864583]
+[green_trainer.py:250 train()] -> [Epoch 15/30] [Train mlm pred: 0.9872409158] [Eval mlm pred: 0.9931158385]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [15 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_15.pth
+[green_trainer.py:241 train()] -> [Epoch 16/30] [Train loss: 0.0473666593] [Eval loss: 0.0274659645]
+[green_trainer.py:244 train()] -> [Epoch 16/30] [Train cl  loss: 0.0057710100] [Eval cl  loss: 0.0029172529]
+[green_trainer.py:247 train()] -> [Epoch 16/30] [Train mlm loss: 0.0415956493] [Eval mlm loss: 0.0245487116]
+[green_trainer.py:250 train()] -> [Epoch 16/30] [Train mlm pred: 0.9887770473] [Eval mlm pred: 0.9939523325]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [16 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_16.pth
+[green_trainer.py:241 train()] -> [Epoch 17/30] [Train loss: 0.0421954954] [Eval loss: 0.0241778362]
+[green_trainer.py:244 train()] -> [Epoch 17/30] [Train cl  loss: 0.0046573013] [Eval cl  loss: 0.0019598214]
+[green_trainer.py:247 train()] -> [Epoch 17/30] [Train mlm loss: 0.0375381942] [Eval mlm loss: 0.0222180148]
+[green_trainer.py:250 train()] -> [Epoch 17/30] [Train mlm pred: 0.9899397745] [Eval mlm pred: 0.9944932299]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [17 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_17.pth
+[green_trainer.py:241 train()] -> [Epoch 18/30] [Train loss: 0.0380740277] [Eval loss: 0.0221303830]
+[green_trainer.py:244 train()] -> [Epoch 18/30] [Train cl  loss: 0.0041348162] [Eval cl  loss: 0.0018128204]
+[green_trainer.py:247 train()] -> [Epoch 18/30] [Train mlm loss: 0.0339392115] [Eval mlm loss: 0.0203175626]
+[green_trainer.py:250 train()] -> [Epoch 18/30] [Train mlm pred: 0.9909184986] [Eval mlm pred: 0.9948879665]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [18 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_18.pth
+[green_trainer.py:241 train()] -> [Epoch 19/30] [Train loss: 0.0344574655] [Eval loss: 0.0212454161]
+[green_trainer.py:244 train()] -> [Epoch 19/30] [Train cl  loss: 0.0033874802] [Eval cl  loss: 0.0017134207]
+[green_trainer.py:247 train()] -> [Epoch 19/30] [Train mlm loss: 0.0310699853] [Eval mlm loss: 0.0195319954]
+[green_trainer.py:250 train()] -> [Epoch 19/30] [Train mlm pred: 0.9917532538] [Eval mlm pred: 0.9952451325]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [19 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_19.pth
+[green_trainer.py:241 train()] -> [Epoch 20/30] [Train loss: 0.0308506038] [Eval loss: 0.0190957455]
+[green_trainer.py:244 train()] -> [Epoch 20/30] [Train cl  loss: 0.0028743451] [Eval cl  loss: 0.0013747792]
+[green_trainer.py:247 train()] -> [Epoch 20/30] [Train mlm loss: 0.0279762587] [Eval mlm loss: 0.0177209663]
+[green_trainer.py:250 train()] -> [Epoch 20/30] [Train mlm pred: 0.9925097178] [Eval mlm pred: 0.9956470166]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [20 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_20.pth
+[green_trainer.py:241 train()] -> [Epoch 21/30] [Train loss: 0.0286840972] [Eval loss: 0.0181567103]
+[green_trainer.py:244 train()] -> [Epoch 21/30] [Train cl  loss: 0.0025132076] [Eval cl  loss: 0.0013010919]
+[green_trainer.py:247 train()] -> [Epoch 21/30] [Train mlm loss: 0.0261708896] [Eval mlm loss: 0.0168556184]
+[green_trainer.py:250 train()] -> [Epoch 21/30] [Train mlm pred: 0.9930558808] [Eval mlm pred: 0.9958416786]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [21 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_21.pth
+[green_trainer.py:241 train()] -> [Epoch 22/30] [Train loss: 0.0264566167] [Eval loss: 0.0167144430]
+[green_trainer.py:244 train()] -> [Epoch 22/30] [Train cl  loss: 0.0021900482] [Eval cl  loss: 0.0008354014]
+[green_trainer.py:247 train()] -> [Epoch 22/30] [Train mlm loss: 0.0242665685] [Eval mlm loss: 0.0158790416]
+[green_trainer.py:250 train()] -> [Epoch 22/30] [Train mlm pred: 0.9936044989] [Eval mlm pred: 0.9960681053]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [22 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_22.pth
+[green_trainer.py:241 train()] -> [Epoch 23/30] [Train loss: 0.0247836562] [Eval loss: 0.0160484083]
+[green_trainer.py:244 train()] -> [Epoch 23/30] [Train cl  loss: 0.0018806856] [Eval cl  loss: 0.0009885930]
+[green_trainer.py:247 train()] -> [Epoch 23/30] [Train mlm loss: 0.0229029707] [Eval mlm loss: 0.0150598153]
+[green_trainer.py:250 train()] -> [Epoch 23/30] [Train mlm pred: 0.9939772394] [Eval mlm pred: 0.9962672875]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [23 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_23.pth
+[green_trainer.py:241 train()] -> [Epoch 24/30] [Train loss: 0.0228167167] [Eval loss: 0.0151980050]
+[green_trainer.py:244 train()] -> [Epoch 24/30] [Train cl  loss: 0.0015201616] [Eval cl  loss: 0.0006948565]
+[green_trainer.py:247 train()] -> [Epoch 24/30] [Train mlm loss: 0.0212965551] [Eval mlm loss: 0.0145031486]
+[green_trainer.py:250 train()] -> [Epoch 24/30] [Train mlm pred: 0.9944194665] [Eval mlm pred: 0.9963983427]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [24 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_24.pth
+[green_trainer.py:241 train()] -> [Epoch 25/30] [Train loss: 0.0215099422] [Eval loss: 0.0144581296]
+[green_trainer.py:244 train()] -> [Epoch 25/30] [Train cl  loss: 0.0013965719] [Eval cl  loss: 0.0006861369]
+[green_trainer.py:247 train()] -> [Epoch 25/30] [Train mlm loss: 0.0201133703] [Eval mlm loss: 0.0137719928]
+[green_trainer.py:250 train()] -> [Epoch 25/30] [Train mlm pred: 0.9947417144] [Eval mlm pred: 0.9966640247]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [25 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_25.pth
+[green_trainer.py:241 train()] -> [Epoch 26/30] [Train loss: 0.0208171836] [Eval loss: 0.0142708054]
+[green_trainer.py:244 train()] -> [Epoch 26/30] [Train cl  loss: 0.0011629104] [Eval cl  loss: 0.0005951999]
+[green_trainer.py:247 train()] -> [Epoch 26/30] [Train mlm loss: 0.0196542732] [Eval mlm loss: 0.0136756055]
+[green_trainer.py:250 train()] -> [Epoch 26/30] [Train mlm pred: 0.9948736002] [Eval mlm pred: 0.9967489163]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [26 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_26.pth
+[green_trainer.py:241 train()] -> [Epoch 27/30] [Train loss: 0.0203756032] [Eval loss: 0.0136719712]
+[green_trainer.py:244 train()] -> [Epoch 27/30] [Train cl  loss: 0.0009640732] [Eval cl  loss: 0.0005383410]
+[green_trainer.py:247 train()] -> [Epoch 27/30] [Train mlm loss: 0.0194115300] [Eval mlm loss: 0.0131336302]
+[green_trainer.py:250 train()] -> [Epoch 27/30] [Train mlm pred: 0.9949782990] [Eval mlm pred: 0.9967974881]
+[green_trainer.py:143 save_model_with_epoch()] -> Saved [27 epoch] model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/pretrain_model_27.pth
+[green_trainer.py:241 train()] -> [Epoch 28/30] [Train loss: 0.0198512727] [Eval loss: 0.0138831762]
+[green_trainer.py:244 train()] -> [Epoch 28/30] [Train cl  loss: 0.0008937222] [Eval cl  loss: 0.0004432359]
+[green_trainer.py:247 train()] -> [Epoch 28/30] [Train mlm loss: 0.0189575505] [Eval mlm loss: 0.0134399404]
+[green_trainer.py:250 train()] -> [Epoch 28/30] [Train mlm pred: 0.9951034425] [Eval mlm pred: 0.9967300608]
+[green_trainer.py:241 train()] -> [Epoch 29/30] [Train loss: 0.0196388249] [Eval loss: 0.0140996508]
+[green_trainer.py:244 train()] -> [Epoch 29/30] [Train cl  loss: 0.0008916360] [Eval cl  loss: 0.0004610640]
+[green_trainer.py:247 train()] -> [Epoch 29/30] [Train mlm loss: 0.0187471890] [Eval mlm loss: 0.0136385868]
+[green_trainer.py:250 train()] -> [Epoch 29/30] [Train mlm pred: 0.9951910974] [Eval mlm pred: 0.9967002535]
+[green_trainer.py:271 train()] -> Best model at [epoch 27]!
+[green_trainer.py:274 train()] -> Saved model at ./log/porto/exp_bs128_inter2_epoch30_2e-4_cls_2grid_2_0.2ratio/pretrain/best_pretrain_model.pth
