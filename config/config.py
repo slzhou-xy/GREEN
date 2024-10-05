@@ -101,11 +101,10 @@ class Config:
     @classmethod
     def post_value_updates(cls):
         if 'porto' == cls.dataset:
-            # user num 440
-            cls.min_lon = -8.68942  # -8.689419
-            cls.min_lat = 41.13934         # 41.139342
-            cls.max_lon = -8.55434  # -8.554347
-            cls.max_lat = 41.18586         # 41.185854
+            cls.min_lon = -8.68942
+            cls.min_lat = 41.13934
+            cls.max_lon = -8.55434
+            cls.max_lat = 41.18586
             cls.cls_num = 3
             cls.weight_decay = 0.0001
 
@@ -117,12 +116,10 @@ class Config:
             cls.max_lat = 41.99106
             cls.cls_num = 315
         elif 'chengdu' == cls.dataset:
-            # num traj  1,162,303
-            # num user  13,761
-            cls.min_lon = 103.92994  # 103.929943667708
-            cls.max_lon = 104.20535  # 104.2053401907852
-            cls.min_lat = 30.56799   # 30.5679951958523
-            cls.max_lat = 30.78813   # 30.78812499159979
+            cls.min_lon = 103.92994
+            cls.max_lon = 104.20535
+            cls.min_lat = 30.56799
+            cls.max_lat = 30.78813
             cls.cls_num = 2
             cls.weight_decay = 0.0001
         else:
