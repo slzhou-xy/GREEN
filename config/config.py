@@ -109,7 +109,6 @@ class Config:
             cls.weight_decay = 0.0001
 
         elif 'rome' == cls.dataset:
-            # user num 325
             cls.min_lon = 12.37351
             cls.max_lon = 12.61587
             cls.min_lat = 41.79417
