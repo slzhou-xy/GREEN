@@ -4,7 +4,7 @@ The pytorch implementation of KDD2025 accepted paper "Grid and Road Expressions 
 
 
 ## Download data
-Data is coming soon
+**Data is coming soon**
 
 
 The hyper-parameters are in `./config/config.py`
