@@ -1,7 +1,10 @@
-# GREEN
+# Grid and Road Expressions Are Complementary for Trajectory Representation Learning
+
+The pytorch implementation of KDD2025 accepted paper "Grid and Road Expressions Are Complementary for Trajectory Representation Learning"
+
 
 ## Download data
-For privacy, we only publish the sampled data (`./data/`) at the review, and if the paper is accepted, we will open source all the data and code.
+Data is coming soon
 
 
 The hyper-parameters are in `./config/config.py`
