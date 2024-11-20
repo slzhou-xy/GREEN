@@ -28,7 +28,8 @@ def continuous_mask_sequence(sequence, mask_percentage, mask_length):
     max_interval = num_continuous_intervals - num_intervals_to_mask
 
     start_indices = set()
-    # TODO
+    # TODO: An infinite loop could happen here, but this rarely happens because the masking rate is too small, 
+    #       and we can exit by setting the number of loops
     # num = 0
     while len(start_indices) < num_intervals_to_mask:
         start_idx = random.randint(0, max_interval)
