@@ -4,7 +4,7 @@ The pytorch implementation of **KDD2025(August Cycle)** accepted paper "Grid and
 
 
 ## Download data
-**Data is coming soon**
+**Full data is coming soon**
 
 
 The hyper-parameters are in `./config/config.py`
