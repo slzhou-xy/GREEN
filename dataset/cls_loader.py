@@ -95,14 +95,7 @@ class TrajDataLoader:
             road_minute_inputs[i, 0] = road_minutes[0]
             road_minute_inputs[i, 1:road_len + 1] = torch.LongTensor(road_minutes)
 
-            if self.dataset == 'rome':
-                label_inputs.append(data_df[i].user_id)
-            elif self.dataset == 'chengdu':
-                label_inputs.append(data_df[i].flag)
-            elif self.dataset == 'porto':
-                label_inputs.append(data_df[i].call_type)
-            else:
-                raise NotImplementedError
+            label_inputs.append(data_df[i].class_type)
 
         road_data = {
             'road_traj': road_traj_inputs,
