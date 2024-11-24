@@ -13,6 +13,14 @@ We only provide Porto dataset. Due to privacy, we cannot provide the Chengdu dat
 
 To use dataset, unzip dataset in directory `./data/porto`.
 
+- `./data/porto/rn/...` is the road network data.
+
+- `./data/porto/traj.csv` is the raw trajectory data.
+
+- `./data/porto/traj/*_od.csv` is the trajectory data for similarity.
+  
+- To get road trajectories, please refer to the [FMM](https://github.com/cyang-kth/fmm).
+
 ## Hyper-parameters
 
 The hyper-parameters are in `./config/config.py`. You can modify it according to your needs.
