@@ -275,7 +275,7 @@ class Preprocess:
 
         data_dict = {
             'user_id': user_id,
-            'flag': flag_list,
+            'class_type': flag_list,
             'travel_time': travel_time,
             'time': temporal_list,
             'time_emb': temporal_emb_list,
