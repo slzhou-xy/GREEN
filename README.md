@@ -26,7 +26,7 @@ python main.py --dataset chengdu
 # Porto
 python main.py --dataset porto 
 ```
-You can set **exp_id** in the main.py.
+You can set **exp_id** in the `main.py`.
 
 When running the model for the first time, it preprocesses the data, which will take some time, so be patient.
 
@@ -34,7 +34,7 @@ When running the model for the first time, it preprocesses the data, which will 
 
 ## Downstream Tasks
 
-When run the model for the downstream tasks, set the same **exp_id** in main_<task>.py as for pre-training.
+When run the model for the downstream tasks, set the same **exp_id** in `main_<task>.py` as for pre-training.
 
 ### Travel Time Estimation (Fine-tuning)
 ```
