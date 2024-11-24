@@ -2,7 +2,21 @@
 
 **[KDD2025(August Cycle)]** The pytorch implementation of accepted paper "Grid and Road Expressions Are Complementary for Trajectory Representation Learning"
 
-GREEN is based on Python version 3.10, PyTorch version 2.0.1, PyG version 2.3.1. Please make sure you have installed Python, PyTorch, and PyG correctly.
+GREEN is based on Python version 3.10 and PyTorch version 2.0.1. Please make sure you have installed Python, PyTorch correctly. Then you can install other dependencies as follows:
+
+*geographiclib*==2.0
+*geohash2*==1.1
+*geopy*==2.4.1
+*haversine*==2.8.1
+*pandas*==2.2.3
+*PyYAML*==6.0.2
+*scikit_learn*==1.3.0
+*scipy*==1.14.1
+*Shapely*==2.0.6
+*timm*==0.9.8
+*torch_geometric*==2.3.1
+*torchvision*==0.15.2
+*tqdm*==4.66.1
 
 ## Framework
 <div align=center>
