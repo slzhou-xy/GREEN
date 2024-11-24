@@ -37,17 +37,16 @@ GREEN is based on Python version 3.10 and PyTorch version 2.0.1. Please make sur
 
 
 ## Dataset
-Due to privacy, we only provide Porto dataset.
+Due to privacy, we only provide Porto dataset. To get road trajectories, please refer to the [FMM](https://github.com/cyang-kth/fmm).
 
-To use dataset, unzip dataset in directory `./data/porto`.
+To use dataset, unzip dataset in directory `./data/porto`, this dataset contains the road trajectory.
 
 - `./data/porto/rn/...` is the road network data.
 
 - `./data/porto/traj.csv` is the raw trajectory data.
 
 - `./data/porto/traj/*_od.csv` is the trajectory data for similarity.
-  
-- To get road trajectories, please refer to the [FMM](https://github.com/cyang-kth/fmm).
+
 
 ## Hyper-parameters
 
@@ -64,7 +63,7 @@ python main.py --dataset porto
 ```
 You can set **exp_id** in the `main.py`.
 
-When running the model for the first time, it preprocesses the data, which will take some time, so be patient.
+When running the model for the first time, it preprocesses the data to get pretrained time encoding, grid trajectory, road feature, etc, which will take some time, so be patient.
 
 
 
