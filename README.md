@@ -8,11 +8,14 @@
 </div>
 
 
-## Download data
-**The repo is now incomplete. Full readme and data are coming soon**
+## Dataset
+We provide Porto data, but we cannot provide the Chengdu data set due to privacy.
 
+To use dataset, unzip dataset in directory `./data/porto`.
 
-The hyper-parameters are in `./config/config.py`
+## Hyper-parameters
+
+The hyper-parameters are in `./config/config.py`. You can modify it according to your needs.
 
 ## Pretraining
 
@@ -23,8 +26,15 @@ python main.py --dataset chengdu
 # Porto
 python main.py --dataset porto 
 ```
+You can set **exp_id** in the main.py.
+
+When running the model for the first time, it preprocesses the data, which will take some time, so be patient.
+
+
 
 ## Downstream Tasks
+
+When run the model for the downstream tasks, set the same **exp_id** in main_<task>.py as for pre-training.
 
 ### Travel Time Estimation (Fine-tuning)
 ```
