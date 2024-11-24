@@ -9,7 +9,7 @@
 
 
 ## Dataset
-We provide Porto data, but we cannot provide the Chengdu data set due to privacy.
+We only provide Porto dataset. Due to privacy, we cannot provide the Chengdu dataset.
 
 To use dataset, unzip dataset in directory `./data/porto`.
 
