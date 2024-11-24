@@ -37,7 +37,7 @@ GREEN is based on Python version 3.10 and PyTorch version 2.0.1. Please make sur
 
 
 ## Dataset
-We only provide Porto dataset. Due to privacy, we cannot provide the Chengdu dataset.
+Due to privacy, we only provide Porto dataset.
 
 To use dataset, unzip dataset in directory `./data/porto`.
 
