@@ -4,7 +4,7 @@
 
 ## Framework
 <div align=center>
-<img src="framework.pdf"/>
+<img src="framework.png"/>
 </div>
 
 
