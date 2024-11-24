@@ -2,6 +2,11 @@
 
 **[KDD2025(August Cycle)]** The pytorch implementation of accepted paper "Grid and Road Expressions Are Complementary for Trajectory Representation Learning"
 
+## Framework
+<div align=center>
+<img src="framework.pdf"/>
+</div>
+
 
 ## Download data
 **The repo is now incomplete. Full readme and data are coming soon**
