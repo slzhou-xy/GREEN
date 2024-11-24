@@ -21,7 +21,7 @@ class Config:
     device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 
     # dataset
-    dataset = 'chengdu'
+    dataset = 'porto'
 
     grid_special_tokens = {
         'padding_token': 0,
