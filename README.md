@@ -101,3 +101,11 @@ python main_sim.py --dataset porto
 ### Cite
 
 If you find the paper useful, please cite our paper. ^_^
+```
+@article{zhou2024grid,
+  title={Grid and Road Expressions Are Complementary for Trajectory Representation Learning},
+  author={Zhou, Silin and Shang, Shuo and Chen, Lisi and Han, Peng and Jensen, Christian S},
+  journal={arXiv preprint arXiv:2411.14768},
+  year={2024}
+}
+```
