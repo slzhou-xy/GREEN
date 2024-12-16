@@ -147,11 +147,11 @@ class Exp:
             dists = q @ db.T
             targets = np.diag(dists)  # [1000]
             result = np.sum(np.greater_equal(dists.T, targets)) / dists.shape[0]
-            logging.info(f'{end} fusion {result}')
+            logging.info(f'{end} MR: {result}')
             
             scores = torch.tensor(dists)
             scores = torch.argsort(scores, descending=True)[:, :10]
             scores = scores.cpu().numpy()
             truth = list(range(end))
             result = self.hit_ratio(truth, scores, [1, 5, 10])
-            logging.info(result)
+            logging.info(f'HR: {result}')
