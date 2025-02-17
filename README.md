@@ -39,7 +39,7 @@ GREEN is based on Python version 3.10 and PyTorch version 2.0.1. Please make sur
 ## Dataset
 Due to privacy, we only provide Porto dataset. To get road trajectories, please refer to the [FMM](https://github.com/cyang-kth/fmm).
 
-To use dataset, unzip dataset in directory `./data/porto`, this dataset contains the road trajectory. （Use Git LFS or Download .zip in directory `./data/porto`）
+To use dataset, unzip dataset in directory `./data/porto`, this dataset contains the road trajectory. （Use **Git LFS** or Download .zip in directory `./data/porto`）
 
 - `./data/porto/rn/...` is the road network data.
 
